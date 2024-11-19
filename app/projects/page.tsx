@@ -65,7 +65,11 @@ const Projects: React.FC = () => {
 					<p className="text-lg">
 						Socrio demonstrates my ability to build scalable, user-friendly
 						applications with a focus on responsive design and seamless user
-						experiences.
+						experiences. I was able to design and implement various features
+						such as voice memo recording, virtual chat rooms, direct messaging,
+						and social media style feed with voting mechanism. The released
+						application was recieved by a niche audience that was satisfied, but
+						too small to continue development.
 					</p>
 				</div>
 
