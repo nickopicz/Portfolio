@@ -9,21 +9,6 @@ export default function Contact() {
 			<p className="mt-4 text-lg mb-6">You can reach me with the following:</p>
 			<div className="space-y-4">
 				{/* LinkedIn Button */}
-				<a
-					href="https://www.linkedin.com/in/nicholas-ciraulo"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center justify-center bg-[var(--background)] text-white py-2 px-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-12 max-w-fit"
-				>
-					<Image
-						src="/linkedin-logo.webp" // Replace with the actual path to your LinkedIn logo
-						alt="LinkedIn"
-						className="w-10 h-10"
-						width={24}
-						height={24}
-					/>
-					<span className="text-m">Visit My LinkedIn</span>
-				</a>
 
 				{/* Email */}
 				<p className="text-lg">
@@ -46,6 +31,21 @@ export default function Contact() {
 						+1 (908) 410-7335
 					</a>
 				</p>
+				<a
+					href="https://www.linkedin.com/in/nicholas-ciraulo"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="flex items-center justify-center bg-[var(--background)] text-white py-2 px-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-12 max-w-fit"
+				>
+					<Image
+						src="/linkedin-logo.webp" // Replace with the actual path to your LinkedIn logo
+						alt="LinkedIn"
+						className="w-10 h-10"
+						width={24}
+						height={24}
+					/>
+					<span className="text-m">Visit My LinkedIn</span>
+				</a>
 			</div>
 		</div>
 	);
