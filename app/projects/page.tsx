@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
 					</h2>
 					<p className="text-lg mb-2">
 						A cross-platform social networking app designed to connect local
-						people and short form audio communication, built using modern tools
+						people and short-form audio communication, built using modern tools
 						and frameworks.
 					</p>
 					<ul className="list-disc list-inside text-lg mb-4">
@@ -62,15 +62,23 @@ const Projects: React.FC = () => {
 							React Native's Animated API, Flask REST API
 						</li>
 					</ul>
-					<p className="text-lg">
+					<p className="text-lg mb-4">
 						Socrio demonstrates my ability to build scalable, user-friendly
 						applications with a focus on responsive design and seamless user
 						experiences. I was able to design and implement various features
 						such as voice memo recording, virtual chat rooms, direct messaging,
-						and social media style feed with voting mechanism. The released
-						application was recieved by a niche audience that was satisfied, but
+						and a social media-style feed with a voting mechanism. The released
+						application was received by a niche audience that was satisfied but
 						too small to continue development.
 					</p>
+					<a
+						href="https://socrio.net"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-block bg-accent-blue text-white py-2 px-4 rounded-lg hover:bg--background transition-colors duration-300"
+					>
+						Visit Socrio.net
+					</a>
 				</div>
 
 				{/* GitHub Repositories Section */}
@@ -111,25 +119,6 @@ const Projects: React.FC = () => {
 							))}
 						</div>
 					)}
-				</div>
-
-				{/* Resume Section */}
-				<div className="mt-12">
-					<h2 className="text-2xl font-bold text-accent-primary mb-4">
-						My Resume
-					</h2>
-					<p className="text-lg mb-2">
-						You can view or download my resume below to learn more about my
-						background and experience.
-					</p>
-					<a
-						href="/resume.pdf"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-accent-primary hover:text-accent-secondary underline"
-					>
-						View Resume (PDF)
-					</a>
 				</div>
 			</div>
 		</div>

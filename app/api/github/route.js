@@ -28,15 +28,17 @@ export async function GET(req) {
 			},
 		});
 
-		const data = response.data.map((repo) => ({
-			id: repo.id,
-			name: repo.name,
-			description: repo.description,
-			html_url: repo.html_url,
-			stargazers_count: repo.stargazers_count,
-			forks_count: repo.forks_count,
-			language: repo.language,
-		}));
+		const data = response.data
+			.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)) // Sort descending by `pushed_at`
+			.map((repo) => ({
+				id: repo.id,
+				name: repo.name,
+				description: repo.description,
+				html_url: repo.html_url,
+				stargazers_count: repo.stargazers_count,
+				forks_count: repo.forks_count,
+				language: repo.language,
+			}));
 
 		return new Response(JSON.stringify(data), {
 			status: 200,
