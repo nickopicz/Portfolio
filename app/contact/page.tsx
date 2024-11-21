@@ -2,11 +2,14 @@ import Image from 'next/image';
 
 export default function Contact() {
 	return (
-		<div className="container mx-auto px-6 py-8 bg-[var(--background)] text-[var(--foreground)]">
+		<div className="flex-col flex items-center justify-center mx-auto px-6 mt-24 py-8 bg-[var(--background)] text-[var(--foreground)]">
 			<h1 className="text-4xl font-bold text-accent-primary mb-6">
 				Contact Information
 			</h1>
-			<p className="mt-4 text-lg mb-6">You can reach me with the following:</p>
+			<p className="mt-4 text-lg mb-6">
+				I hope you found what you were looking for! You can reach me with the
+				following:
+			</p>
 			<div className="space-y-4">
 				{/* LinkedIn Button */}
 
@@ -25,7 +28,7 @@ export default function Contact() {
 				<p className="text-lg">
 					<strong>Phone:</strong>{' '}
 					<a
-						href="tel:+1234567890"
+						href="tel:+19084107335"
 						className="text-accent-primary hover:text-accent-secondary"
 					>
 						+1 (908) 410-7335

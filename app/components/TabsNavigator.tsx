@@ -18,15 +18,15 @@ const TabsNavigator: React.FC<TabsNavigatorProps> = ({ tabs, links }) => {
 
 	return (
 		<TabGroup>
-			<TabList className="flex w-full bg-[var(--background)] shadow-md sticky top-0 z-10">
+			<TabList className="flex w-full bg-[var(--background)] shadow-md fixed top-0 left-0 z-50">
 				{tabs.map((tab, index) => (
 					<Tab
 						key={tab}
 						onClick={() => handleTabClick(links[index])}
 						className={({ selected }) =>
 							selected
-								? 'flex-1 px-4 py-3 text-base font-medium text-[var(--accent-coral)] bg-accent-coral hover:bg-accent-yellow  text-center border-none rounded-none'
-								: 'flex-1 px-4 py-3 text-base font-medium text-[var(--foreground)] hover:bg-accent-yellow text-center border-none rounded-none'
+								? 'flex-1 px-4 py-3 text-base font-medium text-[var(--accent-coral)] bg-accent-coral hover:bg-neutral-gray text-center border-none rounded-none'
+								: 'flex-1 px-4 py-3 text-base font-medium text-[var(--foreground)] hover:bg-neutral-gray text-center border-none rounded-none'
 						}
 					>
 						{tab}

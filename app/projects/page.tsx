@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import getRepos from '../api/github/route';
+import Image from 'next/image';
 
 const Projects: React.FC = () => {
 	const [repos, setRepos] = useState([]);
@@ -27,7 +28,7 @@ const Projects: React.FC = () => {
 	}, []);
 
 	return (
-		<div className="bg-[var(--background)] text-[var(--foreground)] min-h-screen p-8">
+		<div className="bg-[var(--background)] text-[var(--foreground)] min-h-screen pt-20 p-8">
 			<div className="container mx-auto">
 				<h1 className="text-4xl font-bold text-accent-primary mb-6">
 					Projects
@@ -72,13 +73,56 @@ const Projects: React.FC = () => {
 						too small to continue development.
 					</p>
 					<a
-						href="https://socrio.net"
+						href="https://socrio.net/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="inline-block bg-accent-blue text-white py-2 px-4 rounded-lg hover:bg--background transition-colors duration-300"
+						className="flex items-center justify-center bg-[var(--background)] text-white p-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-16 max-w-fit border border-[var(--foreground)]"
 					>
-						Visit Socrio.net
+						<Image
+							src="/socrio.png" // Replace with the actual path to your LinkedIn logo
+							alt="Socrio Logo"
+							className="w-10 h-10"
+							width={24}
+							height={24}
+							style={{ borderRadius: 10 }}
+						/>
+						<span className="text-m">Download Socrio</span>
 					</a>
+				</div>
+				{/* MEB Software System Section */}
+				<div className="mt-8">
+					<h2 className="text-2xl font-bold text-accent-primary mb-4">
+						Manned Electrically Propelled Boat (MEB) Software System
+					</h2>
+					<p className="text-lg mb-2">
+						The software system of the MEB comprises three distinct subsystems,
+						each contributing to the functionality and real-time operation of
+						the boat:
+					</p>
+					<ul className="list-disc list-inside text-lg mb-4">
+						<li>
+							<strong>Motor Controller:</strong> Handles the operation of the
+							boat by managing motor parameters and capabilities. It uses
+							Service Data Objects (SDO) for motor telemetry and calibration.
+						</li>
+						<li>
+							<strong>Raspberry Pi Subsystem:</strong> Responsible for data
+							logging and live telemetry. Utilizing Python (Tkinter, Flask API,
+							SQLAlchemy), the system stores data into onboard and shore
+							databases, manages sensor integration via Arduino, and supports a
+							live driver display.
+						</li>
+						<li>
+							<strong>Shore System:</strong> Displays comprehensive telemetry
+							data to the shore crew, enabling real-time analysis and
+							communication with the driver during operations.
+						</li>
+					</ul>
+					<p className="text-lg mb-4">
+						The system demonstrates advanced capabilities in real-time data
+						collection, transmission, and visualization, ensuring optimal
+						performance and safety during tests and races.
+					</p>
 				</div>
 
 				{/* GitHub Repositories Section */}
