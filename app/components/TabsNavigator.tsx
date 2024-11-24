@@ -25,8 +25,8 @@ const TabsNavigator: React.FC<TabsNavigatorProps> = ({ tabs, links }) => {
 						onClick={() => handleTabClick(links[index])}
 						className={({ selected }) =>
 							selected
-								? 'flex-1 px-4 py-3 text-base font-medium text-[var(--accent-coral)] bg-accent-coral hover:bg-neutral-gray text-center border-none rounded-none'
-								: 'flex-1 px-4 py-3 text-base font-medium text-[var(--foreground)] hover:bg-neutral-gray text-center border-none rounded-none'
+								? 'flex-1 px-4 py-3 text-base font-medium text-neutral-dark bg-accent-coral hover:bg-neutral-gray text-center border-none rounded-none'
+								: 'flex-1 px-4 py-3 text-base font-medium text-neutral-light hover:bg-neutral-gray text-center border-none rounded-none'
 						}
 					>
 						{tab}

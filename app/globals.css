@@ -7,7 +7,7 @@
 	--foreground: #1a1a1a; /* Dark gray for text */
 	--accent-primary: #8570f8; /* Modern soft blue */
 	--accent-secondary: #1f5e24; /* Subtle orange */
-	--accent-hover: #c924bb; /* Accent red for hovers */
+	--accent-hover: #247fc9; /* Accent red for hovers */
 }
 
 @media (prefers-color-scheme: dark) {

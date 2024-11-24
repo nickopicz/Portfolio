@@ -15,7 +15,7 @@ module.exports = {
 				accent: {
 					blue: '#007BFF',
 					yellow: '#FFC107',
-					coral: '#FF6F61',
+					coral: '#61ffbe',
 				},
 			},
 		},

@@ -89,6 +89,54 @@ const Projects: React.FC = () => {
 						<span className="text-m">Download Socrio</span>
 					</a>
 				</div>
+				<div className="mt-8">
+					<h2 className="text-2xl font-bold text-accent-primary mb-4">
+						"Toonit"/"AutoRX" Mobile Applications
+					</h2>
+					<p className="text-lg mb-2">
+						Two partner apps designed for the purpose of helping people fix
+						their car by connecting users with registered mechanics. One app for
+						the consumers, a seperate app for the mechanics.
+					</p>
+					<ul className="list-disc list-inside text-lg mb-4">
+						<li>
+							<strong>Frontend:</strong> React Native, Expo
+						</li>
+						<li>
+							<strong>State Management:</strong> Redux, AsyncStorage
+						</li>
+						<li>
+							<strong>Backend:</strong> Firebase, FastAPI
+						</li>
+						<li>
+							<strong>Other Tools:</strong> TypeScript, Stripe Payments, Kaggle
+							Datasets
+						</li>
+					</ul>
+					<p className="text-lg mb-4">
+						Toonit/AutoRX showed that I can build mobile applications at scale,
+						balancing two different systems. I was able to reduce overhead costs
+						and development time by securely containing both databases within
+						one firebase backend, re-using my react functional components, and
+						utilizing open source car databases.
+					</p>
+					{/* <a
+						href="https://socrio.net/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex items-center justify-center bg-[var(--background)] text-white p-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-16 max-w-fit border border-[var(--foreground)]"
+					>
+						<Image
+							src="/socrio.png" // Replace with the actual path to your LinkedIn logo
+							alt="Socrio Logo"
+							className="w-10 h-10"
+							width={24}
+							height={24}
+							style={{ borderRadius: 10 }}
+						/>
+						<span className="text-m">Download Socrio</span>
+					</a> */}
+				</div>
 				{/* MEB Software System Section */}
 				<div className="mt-8">
 					<h2 className="text-2xl font-bold text-accent-primary mb-4">
@@ -127,9 +175,13 @@ const Projects: React.FC = () => {
 
 				{/* GitHub Repositories Section */}
 				<div className="mt-12">
-					<h2 className="text-2xl font-bold text-accent-primary mb-4">
+					<h2 className="text-2xl font-bold text-accent-primary mb-2">
 						GitHub Repositories
 					</h2>
+					<p className="text-lg mb-8">
+						More of my Github projects can be found below, as well as the
+						previously mentioned projects.
+					</p>
 					{error ? (
 						<p className="text-red-500">{error}</p>
 					) : (
