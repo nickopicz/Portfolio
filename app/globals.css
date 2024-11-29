@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
 	--background: #ffffff; /* Minimal light */
@@ -20,7 +21,7 @@
 body {
 	color: var(--foreground);
 	background: var(--background);
-	font-family: 'Inter', Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 }
 
