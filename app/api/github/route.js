@@ -1,10 +1,9 @@
 import { Octokit } from '@octokit/core';
-import { github_KEY } from '../../keys.js';
 
 export async function GET(req) {
 	try {
 		const octokit = new Octokit({
-			auth: github_KEY,
+			auth: process.env.GITHUB_KEY,
 		});
 
 		const username = 'nickopicz';
