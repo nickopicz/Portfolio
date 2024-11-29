@@ -1,5 +1,5 @@
 import { Octokit } from '@octokit/core';
-import { github_KEY } from '../../../keys';
+import { github_KEY } from '../../keys.js';
 
 export async function GET(req) {
 	try {
