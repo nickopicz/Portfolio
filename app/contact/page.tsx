@@ -38,7 +38,7 @@ export default function Contact() {
 					href="https://www.linkedin.com/in/nicholas-ciraulo"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="flex items-center justify-center bg-[var(--background)] text-white py-2 px-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-12 max-w-fit"
+					className="flex items-center justify-center bg-[var(--background)] shadow text-accent-hover py-2 px-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-12 max-w-fit"
 				>
 					<Image
 						src="/linkedin-logo.webp" // Replace with the actual path to your LinkedIn logo
