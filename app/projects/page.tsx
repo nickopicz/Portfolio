@@ -1,7 +1,11 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import LoadingAnim from '../components/common/LottiePlayer';
+import dynamic from 'next/dynamic';
+
+const LoadingAnim = dynamic(() => import('../components/common/LottiePlayer'), {
+	ssr: false,
+});
 import Image from 'next/image';
 
 interface Repo {

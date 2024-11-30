@@ -16,7 +16,6 @@ const LoadingAnim = () => {
 
 		});
 
-		console.log("animation rendered")
 
 		return () => instance.destroy()
 	}, []);
