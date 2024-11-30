@@ -1,6 +1,6 @@
 import './globals.css';
 import TabsNavigator from './components/TabsNavigator';
-
+import { Analytics } from '@vercel/analytics/react';
 export const metadata = {
 	title: 'My Portfolio',
 	description: 'A portfolio website showcasing my work and skills.',
@@ -22,6 +22,7 @@ export default function RootLayout({
 					tabs={tabs}
 					links={links}
 				/>
+				<Analytics />
 				<div className="container mx-auto px-6 py-8">{children}</div>
 			</body>
 		</html>
