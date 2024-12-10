@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
 						href="https://socrio.net/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="flex items-center justify-center bg-[var(--background)] text-white p-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-16 max-w-fit border border-[var(--foreground)]"
+						className="flex items-center justify-center bg-[var(--background)] text-accent-hover p-4 rounded-lg hover:bg-[var(--foreground)] transition-colors duration-300 space-x-2 w-45 h-16 max-w-fit border border-[var(--foreground)]"
 					>
 						<Image
 							src="/socrio.png" // Replace with the actual path to your LinkedIn logo
