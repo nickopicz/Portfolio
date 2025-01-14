@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
 				</p>
 				<div className="mt-8">
 					<h2 className="text-2xl font-bold text-accent-primary mb-4">
-						Socio Mobile App
+						Socrio Mobile App
 					</h2>
 					<p className="text-lg mb-2">
 						A cross-platform social networking app designed to connect local
